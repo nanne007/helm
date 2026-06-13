@@ -357,7 +357,7 @@ spec:
           {{- end }}
           ports:
             - name: http
-              containerPort: {{ .Values.backend.service.port }}
+              containerPort: 6060
               protocol: TCP
           resources:
             {{- toYaml .Values.backend.resources | nindent 12 }}

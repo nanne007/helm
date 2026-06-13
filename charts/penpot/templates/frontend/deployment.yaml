@@ -353,7 +353,7 @@ spec:
               readOnly: false
           ports:
             - name: http
-              containerPort: {{ .Values.frontend.service.port }}
+              containerPort: 80
               protocol: TCP
           resources:
             {{- toYaml .Values.frontend.resources | nindent 12 }}

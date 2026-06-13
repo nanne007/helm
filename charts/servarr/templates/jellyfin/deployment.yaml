@@ -66,7 +66,7 @@ spec:
         {{- end }}
           ports:
             - name: http
-              containerPort: {{ .Values.jellyfin.service.port }}
+              containerPort: 8096
               protocol: TCP
           {{ if .Values.jellyfin.enableDLNA }}
             - name: dlna

@@ -343,7 +343,7 @@ spec:
           {{- end }}
           ports:
             - name: http
-              containerPort: {{ .Values.exporter.service.port }}
+              containerPort: 6061
               protocol: TCP
           resources:
             {{- toYaml .Values.exporter.resources | nindent 12 }}

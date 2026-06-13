@@ -69,7 +69,7 @@ spec:
           {{- end }}
           ports:
             - name: http
-              containerPort: {{ .Values.seerr.service.port | default 5055 }}
+              containerPort: 5055
               protocol: TCP
           env:
             {{- range $k, $v := .Values.seerr.env }}

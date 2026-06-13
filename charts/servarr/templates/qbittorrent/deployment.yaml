@@ -81,13 +81,13 @@ spec:
           {{- end }}
           ports:
             - name: http
-              containerPort: {{ .Values.qbittorrent.service.web.port | default 8080 }}
+              containerPort: 8080
               protocol: TCP
             - name: bittorrent-tcp
-              containerPort: {{ .Values.qbittorrent.service.bt.port | default 6881 }}
+              containerPort: {{ .Values.qbittorrent.service.bt.containerPort | default 6881 }}
               protocol: TCP
             - name: bittorrent-udp
-              containerPort: {{ .Values.qbittorrent.service.bt.port | default 6881 }}
+              containerPort: {{ .Values.qbittorrent.service.bt.containerPort | default 6881 }}
               protocol: UDP
           env:
             {{- range $k, $v := .Values.qbittorrent.env }}

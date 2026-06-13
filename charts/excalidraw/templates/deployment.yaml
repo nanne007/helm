@@ -51,7 +51,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
-              containerPort: {{ .Values.service.port | default 80 }}
+              containerPort: 80
               protocol: TCP
           {{- with .Values.startupProbe }}
           startupProbe:

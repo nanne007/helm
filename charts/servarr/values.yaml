@@ -491,6 +491,7 @@ qbittorrent:
     bt:
       type: ClusterIP
       port: 6881
+      containerPort: 6881
       nodePort: ""
 
   ingress:
