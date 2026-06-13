@@ -25,5 +25,7 @@ jobs:
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
       - name: Run Release
         uses: helm/chart-releaser-action@v1.6.0
+        with:
+          pages-branch: gh-pages
         env:
           CR_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
