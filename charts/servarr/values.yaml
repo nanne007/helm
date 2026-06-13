@@ -410,6 +410,7 @@ sonarr:
 ## @param qbittorrent.service.web.nodePort The nodePort to use for the service. Only used if service.type is NodePort.
 ## @param qbittorrent.service.bt.type The type of service to create.
 ## @param qbittorrent.service.bt.port The port on which the service will run.
+## @param qbittorrent.service.bt.containerPort The container port to use for the service.
 ## @param qbittorrent.service.bt.nodePort The nodePort to use for the service. Only used if service.type is NodePort.
 ## @param qbittorrent.ingress.enabled Whether to create an ingress for the service.
 ## @param qbittorrent.ingress.className The ingress class name to use.
